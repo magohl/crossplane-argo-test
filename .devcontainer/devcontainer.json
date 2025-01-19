@@ -1,0 +1,3 @@
+{
+    "postStartCommand": "kind create cluster --name kind --config /kind/kind.yaml || true"
+}

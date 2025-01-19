@@ -13,6 +13,10 @@ spec:
     repoURL: https://github.com/magohl/crossplane-argo-test
     targetRevision: HEAD
     path: crossplane
+    helm:
+      dependencyUpdate: true
+      releaseName: crossplane
+      skipCrds: false        # recommended if you want Crossplane CRDs installed
   destination:
     server: https://kubernetes.default.svc
     namespace: crossplane-system
