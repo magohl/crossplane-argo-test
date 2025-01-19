@@ -1,4 +1,4 @@
-apiVersion: argoproj.io/v1alpha1
+apiVersion: v3
 type: application
 name: crossplane-argocd
 version: 0.0.0 # unused
