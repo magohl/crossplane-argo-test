@@ -1,3 +1,9 @@
 {
-    "postStartCommand": "curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.26.0/kind-linux-amd64 && chmod +x ./kind && sudo mv ./kind /usr/local/bin/kind && sleep 10 && kind create cluster --name kind || true"
-}
+    "name": "KIND Example",
+    "features": {
+      "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+        "version": "latest"
+      }
+    },
+    "postCreateCommand": "minikube start"
+  }

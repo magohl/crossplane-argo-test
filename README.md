@@ -2,7 +2,7 @@
 crossplane-argo-test
 
 
-kind create cluster --name kind2 --config kind/kind.yaml
+minikube start
 kubectl apply -k argocd/install
 kubectl wait --for=condition=ready pod -l app.kubernetes.io/name=argocd-server --namespace argocd --timeout=300s
 
