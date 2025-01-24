@@ -1,4 +1,4 @@
 {
     "name": "crossplane-argo-test",
-    "postCreateCommand": "minikube start"
+    "postStartCommand": "minikube start"
   }
