@@ -1,4 +1,5 @@
 {
     "name": "crossplane-argo-test",
-    "postCreateCommand": "chmod +x .devcontainer/postCreate.sh && .devcontainer/postCreate.sh"
+    "postCreateCommand": "chmod +x .devcontainer/postCreate.sh && .devcontainer/postCreate.sh",
+    "postStartCommand": "minikube start"
   }
